@@ -1,17 +1,15 @@
-public class FindPrimeNumber {
+import java.util.Scanner;
 
+public class FindPrimeNumber {
     public static void main(String[] args) {
-        int num = Integer.parseInt(args[0]);
+        Scanner in = new Scanner(System.in);
+        int num = Integer.parseInt(in.nextLine());
         boolean isPrime = true;
-        for (int i=2; i <= Math.sqrt(num); i++) {
+        for (int i=2; i<=Math.sqrt(num); i++) {
             if (num % i == 0) {
                 isPrime = false;
             }
         }
-        if (isPrime) {
-            System.out.println(num + " is prime");
-        } else {
-            System.out.println(num + " is not prime");
-        }
+        System.out.println(isPrime);
     }
 }

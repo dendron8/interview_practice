@@ -1,13 +1,15 @@
-public class Fibonacci {
+import java.util.Scanner;
 
+public class Fibonacci {
     public static void main(String[] args) {
-        System.out.println("0 1 ");
-        printFibonacci(0, 1, Integer.parseInt(args[0]));
+        Scanner in = new Scanner(System.in);
+        System.out.println("0 1");
+        printFibonacci(0,1, Integer.parseInt(in.nextLine()));
     }
 
-    private static void printFibonacci(int one, int two, int number) {
-        if (number == 0) return;
+    private static void printFibonacci(int one, int two, int inboundNumber) {
+        if (inboundNumber == 0) return;
         System.out.println(one + two + " ");
-        printFibonacci(two, one+two, --number);
+        printFibonacci(two, one + two, --inboundNumber);
     }
 }

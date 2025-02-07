@@ -1,7 +1,9 @@
-public class ReverseString {
+import java.util.Scanner;
 
+public class ReverseString {
     public static void main(String[] args) {
-        String startString = args[0];
+        Scanner in = new Scanner(System.in);
+        String startString = in.nextLine();
         int i = 0;
         int j = startString.length()-1;
         char[] reverseString = new char[j+1];
@@ -11,6 +13,6 @@ public class ReverseString {
             i++;
             j--;
         }
-        System.out.println("here it is: " + String.valueOf(reverseString));
+        System.out.println(String.valueOf(reverseString));
     }
 }
