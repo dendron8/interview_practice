@@ -2,7 +2,7 @@ import java.io.*;
 
 import static java.util.stream.Collectors.joining;
 
-class Result {
+class Result5 {
 
     /*
      * Complete the 'dayOfProgrammer' function below.
@@ -51,7 +51,7 @@ public class DayOfTheProgrammer {
 
         int year = Integer.parseInt(bufferedReader.readLine().trim());
 
-        String result = Result.dayOfProgrammer(year);
+        String result = Result5.dayOfProgrammer(year);
 
         bufferedWriter.write(result);
         bufferedWriter.newLine();
